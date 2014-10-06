@@ -8,6 +8,7 @@ gem 'sinatra'
 gem 'cucumber'
 gem 'rake'
 gem 'haml'
+gem 'thin'
 
 group :development, :test do
   gem 'capybara'
