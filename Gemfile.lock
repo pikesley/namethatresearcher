@@ -31,6 +31,8 @@ GEM
     guard-cucumber (1.4.1)
       cucumber (>= 1.2.0)
       guard (>= 1.1.0)
+    haml (4.0.5)
+      tilt
     hitimes (1.2.2)
     listen (2.7.11)
       celluloid (>= 0.15.2)
@@ -53,6 +55,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rake (10.3.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -88,5 +91,7 @@ DEPENDENCIES
   cucumber
   guard
   guard-cucumber
+  haml
+  rake
   rspec (~> 3)
   sinatra

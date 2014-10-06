@@ -6,6 +6,8 @@ ruby '2.1.3'
 
 gem 'sinatra'
 gem 'cucumber'
+gem 'rake'
+gem 'haml'
 
 group :development, :test do
   gem 'capybara'
