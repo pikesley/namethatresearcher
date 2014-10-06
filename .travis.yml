@@ -1,3 +1,10 @@
 language: ruby
 rvm:
 - 2.1.3
+deploy:
+  provider: heroku
+  api_key:
+    secure: H5HCzqR1tvxeUV0EQ05mQxvYKJiorjhbaDaBqDehvCrVBcwe9ISOUH120Y2RgqCvox0qnu5Qjn7YRseavMBZVEOfOTrbzfUIOiR0OY5J+khgn5jOtm+jtymB84jTOibKFSn0AX/r96yT5DblVOvlLZV1mK7DlLVy4p2BdhSoeyU=
+  app: namethatresearcher
+  on:
+    repo: pikesley/namethatresearcher
