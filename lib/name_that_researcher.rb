@@ -9,7 +9,12 @@ class NameThatResearcher < Sinatra::Base
       image: 'https://pbs.twimg.com/profile_images/481399996743303169/UnJ_6p6l.jpeg',
       name: @@names.sample,
       bootstrap_theme: 'http://bootswatch.com/superhero/bootstrap.min.css',
-      additional_styles: [ '../styles.css' ]
+      additional_styles: [ '../styles.css' ],
+      github: {
+        user: 'pikesley',
+        project: 'namethatresearcher',
+        ribbon: 'right_gray_6d6d6d'
+      }
     }
   end
 
