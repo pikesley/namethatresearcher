@@ -1,1 +1,1 @@
-web: bundle exec ruby lib/pokrovsky.rb
+web: bundle exec ruby lib/name_that_researcher.rb
