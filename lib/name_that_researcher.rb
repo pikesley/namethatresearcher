@@ -3,10 +3,20 @@ require 'haml'
 
 class NameThatResearcher < Sinatra::Base
   @@names = File.readlines('names').map { |name| name.chomp }
+
   get '/' do
+
+    d10 = rand(100)
+    image = case
+    when d10 < 1
+      'https://pbs.twimg.com/profile_images/481399996743303169/UnJ_6p6l.jpeg'
+    else
+      'https://pbs.twimg.com/profile_images/511282691841355776/Ie96g9Ul.jpeg'
+    end
+
     haml :index, locals: {
       title: 'Name That Researcher',
-      image: 'https://pbs.twimg.com/profile_images/481399996743303169/UnJ_6p6l.jpeg',
+      image: image,
       name: @@names.sample,
       bootstrap_theme: 'http://bootswatch.com/superhero/bootstrap.min.css',
       additional_styles: [ '../styles.css' ],
